@@ -5,9 +5,6 @@ import Switch from "../../Component/UI/Switch";
 export default {
     title: 'UI/Switch/Without label',
     component: Switch,
-    argTypes: {
-        change: { action: 'change' }
-    }
 } as ComponentMeta<typeof Switch>;
 
 const Template: ComponentStory<typeof Switch> = (args) => <Switch {...args}/>

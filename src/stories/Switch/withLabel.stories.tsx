@@ -5,10 +5,6 @@ import Switch from "../../Component/UI/Switch";
 export default {
     title: 'UI/Switch/With label',
     component: Switch,
-    argTypes: {
-        click: { action: 'clicked' }
-    },
-
 } as ComponentMeta<typeof Switch>;
 
 const Template: ComponentStory<typeof Switch> = (args) => <Switch {...args}/>
