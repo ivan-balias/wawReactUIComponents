@@ -4,12 +4,18 @@ import Button from "../../Component/UI/Button";
 
 export default {
     title: 'UI/Button/Link',
-    component: Button
+    component: Button,
+    argTypes: {
+        click: { action: 'clicked' }
+    },
+    parameters: {
+        docs: {
+            description: {
+                component: '',
+            },
+        },
+    },
 } as ComponentMeta<typeof Button>;
-
-const callback = () => {
-    console.log('It`s callback')
-}
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args}/>
 export const Primary = Template.bind({});
@@ -17,6 +23,7 @@ Primary.args = {
     ...Primary.args,
     label: 'Button text',
     color: "primary",
+    size: 'medium',
     variant: 'link',
     disabled: false
 }
@@ -25,6 +32,7 @@ Secondary.args = {
     ...Secondary.args,
     label: 'Button text',
     color: "secondary",
+    size: 'medium',
     variant: 'link',
     disabled: false
 }
@@ -33,6 +41,7 @@ Error.args = {
     ...Error.args,
     label: 'Button text',
     color: "error",
+    size: 'medium',
     variant: 'link',
     disabled: false
 }
@@ -41,6 +50,7 @@ Success.args = {
     ...Success.args,
     label: 'Button text',
     color: "success",
+    size: 'medium',
     variant: 'link',
     disabled: false
 }

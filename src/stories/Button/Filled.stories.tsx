@@ -7,16 +7,24 @@ export default {
     component: Button,
     argTypes: {
         click: { action: 'clicked' }
-    }
+    },
+    parameters: {
+        docs: {
+            description: {
+                component: '',
+            },
+        },
+    },
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button variant='filled' {...args}/>
-
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args}/>
 export const Primary = Template.bind({});
 Primary.args ={
     ...Primary.args,
     label:'Button text',
     color: "primary",
+    size:'medium',
+    variant:'filled',
     disabled:false
 }
 
@@ -25,6 +33,8 @@ Secondary.args ={
     ...Secondary.args,
     label:'Button text',
     color: "secondary",
+    size:'medium',
+    variant:'filled',
     disabled:false
 }
 
@@ -33,6 +43,8 @@ Error.args ={
     ...Error.args,
     label:'Button text',
     color: "error",
+    size:'medium',
+    variant:'filled',
     disabled:false
 }
 
@@ -41,6 +53,8 @@ Success.args ={
     ...Success.args,
     label:'Button text',
     color: "success",
+    size:'medium',
+    variant:'filled',
     disabled:false
 }
 
