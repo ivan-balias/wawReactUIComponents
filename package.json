@@ -1,6 +1,6 @@
 {
   "name": "waw_react_ui",
-  "homepage": "https://ivan-balias.github.io/wawReactUIComponents",
+  "homepage": "https://ivan-balias.github.io/wawReactUIDocs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,8 +25,9 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
+    "build-storybook-docs": "build-storybook --docs",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d storybook-static -r https://github.com/ivan-balias/wawReactUIComponents.git"
+    "deploy": "gh-pages -d storybook-static -r https://github.com/ivan-balias/wawReactUIDocs.git"
   },
   "eslintConfig": {
     "extends": [
