@@ -15,7 +15,9 @@ Primary.args ={
     label:'Switch text',
     color: "primary",
     disabled:false,
-    checked:true
+    checked:true,
+    labelPosition:'right',
+    size:'medium'
 }
 
 export const Secondary = Template.bind({});
@@ -24,7 +26,9 @@ Secondary.args ={
     label:'Switch text',
     color: "secondary",
     disabled:false,
-    checked:true
+    checked:true,
+    labelPosition:'right',
+    size:'medium'
 }
 
 export const Warning = Template.bind({});
@@ -33,7 +37,9 @@ Warning.args ={
     label:'Switch text',
     color: "warning",
     disabled:false,
-    checked:true
+    checked:true,
+    labelPosition:'right',
+    size:'medium'
 }
 
 export const Default = Template.bind({});
@@ -42,7 +48,9 @@ Default.args ={
     label:'Switch text',
     color: "default",
     disabled:false,
-    checked:true
+    checked:true,
+    labelPosition:'right',
+    size:'medium'
 }
 
 

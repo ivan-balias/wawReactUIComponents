@@ -14,7 +14,8 @@ Primary.args ={
     ...Primary.args,
     color: "primary",
     disabled:false,
-    checked:true
+    checked:true,
+    size:'medium'
 }
 
 export const Secondary = Template.bind({});
@@ -22,7 +23,8 @@ Secondary.args ={
     ...Secondary.args,
     color: "secondary",
     disabled:false,
-    checked:true
+    checked:true,
+    size:'medium'
 }
 
 export const Warning = Template.bind({});
@@ -30,7 +32,8 @@ Warning.args ={
     ...Warning.args,
     color: "warning",
     disabled:false,
-    checked:true
+    checked:true,
+    size:'medium'
 }
 
 export const Default = Template.bind({});
@@ -38,7 +41,8 @@ Default.args ={
     ...Default.args,
     color: "default",
     disabled:false,
-    checked:true
+    checked:true,
+    size:'medium'
 }
 
 
